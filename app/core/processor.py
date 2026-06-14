@@ -6,7 +6,6 @@ from app.models.data import Auto
 
 
 def bewerte_auto(mein_auto: Auto):
-    # control flow / conditional logic
     if mein_auto.km < 50:
         ergebnis = "Neues Auto"
     elif mein_auto.marke == "BMW":
@@ -14,5 +13,4 @@ def bewerte_auto(mein_auto: Auto):
     else:
         ergebnis = "Schlechtes Auto"
 
-    # return status
-    print(ergebnis)
+    return ergebnis
